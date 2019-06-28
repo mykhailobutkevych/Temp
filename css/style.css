@@ -16,36 +16,38 @@ Dark green: #28b485
     box-sizing: inherit;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-size: 16px;
     line-height: 1.7;
     color: #777;
-    padding: 20px;
-    /* entire page border */
+    padding: 2rem;
+    box-sizing: border-box;
 }
 
 .header {
     height: 95vh;
     background-image: linear-gradient(45deg, rgba(54, 0, 51, 0.85), rgba(11, 135, 147, 0.85)), url(../img/hero.jpg);
-    /* background-image: linear-gradient(45deg, #159957, #155799), url(../img/hero.jpg); */
     background-size: cover;
     background-position: top;
     position: relative;
-    border-radius: 6px;
+    border-radius: 0.6rem;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
 .logo-box {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem;
 }
 
 .logo {
-    height: 35px;
+    height: 3.5rem;
 }
 
 .text-box {
@@ -63,24 +65,24 @@ body {
 
     /* hack for shaking animation */
     backface-visibility: hidden;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
 }
 
 .heading-primary-main {
     display: block;
-    font-size: 70px;
+    font-size: 7rem;
     font-weight: 400;
-    letter-spacing: 15px;
-    text-shadow: 0 6px 1px rgba(0, 0, 0, .5);
+    letter-spacing: 1.5rem;
+    text-shadow: 0 0.6rem 0.1rem rgba(0, 0, 0, .5);
     animation: moveInLeft 1s ease-out;
 }
 
 .heading-primary-sub {
     display: block;
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 700;
-    letter-spacing: 17.4px;
-    text-shadow: 0 4px 1px rgba(0, 0, 0, .5);
+    letter-spacing: 0.174rem;
+    text-shadow: 0 0.4rem 0.1rem rgba(0, 0, 0, .5);
     animation: moveInRight 1s ease-out;
 }
 
@@ -88,9 +90,9 @@ body {
 .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 40px;
+    padding: 1.5rem 4rem;
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 10rem;
     -webkit-transition: all .2s;
     transition: all .2s;
     position: relative;
@@ -99,13 +101,13 @@ body {
 }
 
 .btn:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, .6);
+    transform: translateY(-0.4rem);
+    box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, .6);
 }
 
 .btn:active {
-    transform: translateY(0px);
-    box-shadow: 0 8px 10px rgba(0, 0, 0, .6);
+    transform: translateY(0rem);
+    box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, .6);
 }
 
 .btn-white {
@@ -118,7 +120,7 @@ body {
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 100px;
+    border-radius: 10rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -144,11 +146,11 @@ body {
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(-10rem);
     }
 
     80% {
-        transform: translateX(10px);
+        transform: translateX(1rem);
     }
 
     100% {
@@ -160,11 +162,11 @@ body {
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(10rem);
     }
 
     80% {
-        transform: translateX(-10px);
+        transform: translateX(-1rem);
     }
 
     100% {
@@ -176,7 +178,7 @@ body {
 @keyframes moveInBottom {
     0% {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(3rem);
     }
 
     100% {
