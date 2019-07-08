@@ -1,0 +1,24 @@
+{
+  "name": "temp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "complie:sass-manual": "node-sass sass/main.scss css/style.css",
+    "complie:sass-watch": "node-sass sass/main.scss css/style.css -w",
+    "live-server": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mykhailobutkevych/Temp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mykhailobutkevych/Temp/issues"
+  },
+  "homepage": "https://github.com/mykhailobutkevych/Temp#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
