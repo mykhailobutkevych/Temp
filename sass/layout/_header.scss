@@ -1,12 +1,11 @@
 .header {
     height: 95vh;
-    background-image: linear-gradient(45deg, $color-primary, $color-secondary), url(../img/hero.jpg);
+    background-image: linear-gradient(45deg, $color-primary, $color-secondary), url(../img/hero-small.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
     border-radius: 0.6rem;
     
-
     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
